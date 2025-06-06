@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.title{
+    margin: 30px auto 50px;
+    text-align: center;
+    color: #4447a9;
+}
+
+.card{
+    background: linear-gradient(227deg, #a5a5a5 15%, #575992 99%);
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.card__img{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+}
+
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card__content{
+    height: 25%;
+    overflow: hidden;
+    /* display: flex; */
+}
+
+.card__title,
+.card__description,
+.card__price,
+.card__rating{
+    color: #0d0051;
+    font-size: 14px;
+}
+
+.card__title{
+    display: -webkit-box;
+    display: box;                    /* Chuẩn (tùy trình duyệt hỗ trợ) */
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-line-clamp: 1;          /* Cho trình duyệt WebKit */
+    line-clamp: 1;                  /* Thuộc tính chuẩn (tương lai) */
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card__description{
+    display: -webkit-box;
+    display: box;                    /* Chuẩn (tùy trình duyệt hỗ trợ) */
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-line-clamp: 2;          /* Cho trình duyệt WebKit */
+    line-clamp: 2;                  /* Thuộc tính chuẩn (tương lai) */
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 20px;
+    text-align: justify;
+}
+
+.card__price{
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+    color: rgb(0, 220, 0);
+    font-weight: 700;
+}
+
+.card__rating{
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+    text-align: end;
+    color: rgb(218, 218, 0);
+}
+
+.card__action{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card__action button{
+    outline: none;
+    padding: 5px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #0e15de;
+    background-color: #d4d4d4;
+    font-size: 700;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.card__action button:hover{
+    color: #d4d4d4;
+    background-color: #0e15de;
+    transform: scale(0.95);
+}
+
+/* .card__rating .fa-star,
+.card__rating .fa-star-half-stroke {
+  color: #FFD700;
+}
+.card__rating .fa-star-half-stroke {
+  opacity: 0.8;
+}
+.card__rating .fa-star.fa-regular {
+  color: #FFD700;
+} */
