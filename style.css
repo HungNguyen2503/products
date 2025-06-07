@@ -35,6 +35,7 @@ body{
     height: 100%;
     object-fit: contain;
     object-position: center;
+    cursor: pointer;
 }
 
 .card__content{
@@ -135,3 +136,15 @@ body{
 .card__rating .fa-star.fa-regular {
   color: #FFD700;
 } */
+
+
+img {
+  -webkit-user-drag: none;   /* Chrome, Safari */
+  -moz-user-drag: none;      /* Firefox (ít dùng) */
+  -o-user-drag: none;        /* Opera (cũ) */
+  
+  -webkit-user-select: none; /* Safari, iOS */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Chuẩn */
+}
