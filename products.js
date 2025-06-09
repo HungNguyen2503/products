@@ -5,7 +5,7 @@ const getData = async () => {
     
     const container = document.getElementById("product-container");
     const template = document.getElementById("product-template");
-    const data = await fetchApi("http://localhost:3000/products");
+    const data = await fetchApi("https://data-json-server-uxiu.onrender.com/api/products");
     
     data.forEach(product => {
         const clone = template.content.cloneNode(true);
